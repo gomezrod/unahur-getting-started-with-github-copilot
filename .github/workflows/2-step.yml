@@ -78,7 +78,7 @@ jobs:
           vars: |
             step_number: 2
             results_table:
-                - description: "Se añadieron nuevas actividades a src/app.py. Se encontraron ${{ steps.check-additional-activities.outputs.occurrences }} actividades (se requieren mínimo 4)"
+              - description: "Se añadieron nuevas actividades a src/app.py. Se encontraron ${{ steps.check-additional-activities.outputs.occurrences }} actividades (se requieren mínimo 4)"
                 passed: ${{ steps.check-additional-activities.outcome == 'success' }}
 
       - name: Fail job if not all checks passed
